@@ -2,13 +2,13 @@ import os
 import time
 
 ELEMENTS = [
-  "rock", "paper", "scissors", "water", "air", "fire", "earth", "grass", "arbenium", "evil"
+  "rock", "paper", "scissors", "water", "air", "fire", "earth", "grass", "arbenium", "evil", "beckinium", "tominium"
 ]
 
 ELEMENT_ICONS = {
     "rock": "🪨", "paper": "📜", "scissors": "✂️", "water": "💧",
     "air": "🌬️", "fire": "🔥", "earth": "🌍", "grass": "🌿",
-    "arbenium": "⚛️", "evil": "😈"
+    "arbenium": "⚛️", "evil": "😈", "beckinium": "👨‍🦲", "tominium": "🖤"
 }
 
 WIN_CONDITIONS = {
@@ -21,7 +21,9 @@ WIN_CONDITIONS = {
     "earth": ["rock", "water", "air", "evil"],
     "grass": ["earth", "water", "paper", "evil"],
     "arbenium": ["rock", "paper", "scissors", "water", "air", "fire", "earth", "grass"],
-    "evil": ["rock", "paper", "scissors", "water", "air", "fire", "earth", "grass"]
+    "evil": ["rock", "paper", "scissors", "water", "air", "fire", "earth", "grass"],
+    "beckinium": ["arbenium"],
+    "tominium": ["rock", "paper", "scissors"]
 }
 
 # Prints the list of elements to remind players which elements they can chose
