@@ -1,4 +1,5 @@
 import os
+import time
 
 ELEMENTS = [
   "rock", "paper", "scissors", "water", "air", "fire", "earth", "grass", "arbenium", "evil"
@@ -51,7 +52,7 @@ print(" Welcome to the 10 ELEMENT ROCK PAPER SCISSORS ")
 print("Elements:", ", ".join(ELEMENTS))
 
 # Player 1 choses element here
-while True:
+while p1_score != 10 and p2_score != 10:
   print("Chose your elements, Player 1:")
   printElementList()
   p1_choice = input("Your choice (or type quit): ").lower()
@@ -78,18 +79,20 @@ while True:
   print("Player 2 chose:", p2_choice.capitalize())
   result = find_winner(p1_choice, p2_choice)
 
-  # Change scores based on who wins
+  # Change scores based on wins
   if result == "player1":
     print("Player 1 wins!", p1_choice.capitalize(), "beats", p2_choice.capitalize())
     p1_score = p1_score + 1
-  elif result -- "player2":
+  elif result == "player2":
     print("Player 2 wins!", p2_choice.capitalize(), "beats", p1_choice.capitalize())
     p2_score = p2_score + 1
   else:
     print("It is a tie.")
+  time.sleep(1)
 
   print("Score -> Player 1:", p1_score, "| Player 2:", p2_score, "\n")
-# Finally, determine and print the final player scores / who won
+
+#FInally, decide and print the scores and winner
 print("\nFinal Scores:")
 print("Player 1:", p1_score, "\nPlayer 2:", p2_score)
 if p1_score > p2_score:
@@ -98,6 +101,3 @@ elif p2_score > p1_score:
   print("Player 2 has won 10 element rock paper scissors!")
 else:
   print("Both players have tied. Nature's balance has been restored!")
-
-  
-
