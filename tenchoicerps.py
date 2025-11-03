@@ -98,8 +98,8 @@ while p1_score != 10 and p2_score != 10:
 print("\nFinal Scores:")
 print("Player 1:", p1_score, "\nPlayer 2:", p2_score)
 if p1_score > p2_score:
-  print("Player 1 has won 10 element rock paper scissors!")
+  print("Player 1 has won 12 choice rock paper scissors!")
 elif p2_score > p1_score:
-  print("Player 2 has won 10 element rock paper scissors!")
+  print("Player 2 has won 12 choice rock paper scissors!")
 else:
-  print("Both players have tied. Nature's balance has been restored!")
+  print("Both players have tied.")
