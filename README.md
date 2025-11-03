@@ -37,14 +37,25 @@ This game is an expanded version of the classic game rock paper scicsors, but in
 ## Some Example Gameplay
 
 ```
-Welcome to the 12 ELEMENT ROCK PAPER SCISSORS
+ Welcome to the 10 ELEMENT ROCK PAPER SCISSORS 
 Elements: rock, paper, scissors, water, air, fire, earth, grass, arbenium, evil, beckinium, tominium
-
 Chose your elements, Player 1:
+Choose your elements from the list above (without emojis!)
 1. 🪨Rock
 2. 📜Paper
 3. ✂️Scissors
-(rest of the list here)
+4. 💧Water
+5. 🌬️Air
+6. 🔥Fire
+7. 🌍Earth
+8. 🌿Grass
+9. ⚛️Arbenium
+10. 😈Evil
+11. 👨‍🦲Beckinium
+12. 🖤Tominium
+Your choice (or type quit): Fire
+
+ (answer clears and then ask the same for next player but they choose Grass)
 
 Player 1 chose: Fire
 Player 2 chose: Grass
